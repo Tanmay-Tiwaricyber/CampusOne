@@ -104,3 +104,7 @@ The student dashboard includes a leave form with date validation, local history 
 ## Icons
 
 Interface icons are inline SVGs from Lucide (ISC license; see `assets/LUCIDE-LICENSE.txt`), so they work without an icon CDN or runtime dependency. Decorative illustrations remain separate from functional UI icons.
+
+## Campus services demos
+
+The student dashboard offers browser-local interactive demonstrations for documents (metadata only), fees (no payments), assignments, grievances, academic history, registration, fictional classmates, library, hostel and transport, events, and feedback. Entries are stored in `localStorage`, persist after sign-out, and are not transmitted or private. Do not enter sensitive data. These are not real college workflows and must be replaced with authenticated, authorized backend services for actual use.
