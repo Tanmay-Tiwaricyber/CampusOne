@@ -93,6 +93,6 @@ This static build mirrors a Next.js + Tailwind + Framer Motion implementation 1:
 
 Tanmay Tiwari · Aditya Verma · Shivansh Dwivedi — B.Tech CSE (AIML), Maharana Institute of Professional Studies.
 
-## Sign-in concept
+## Student sign-in demo
 
-`auth.html` is a responsive role-selection and sign-in UI preview, linked from the landing page. It supports student, teacher, parent, admin and super-admin selection. **It does not authenticate users:** the credential inputs and submit button are disabled because this static project has no authentication backend. Before enabling them, implement a secure server-side identity provider, session handling and server-enforced role/scope authorization; never trust the selected role as proof of access or store credentials in client code.
+`auth.html` provides a client-side sample login for the single student account supplied for this project, which opens `student.html` with illustrative data. The browser session flag supports the demo flow and sign-out only: **it is not authentication or authorization**, the sample credentials are visible in page source, and the dashboard must not contain real data. Other roles and automatic role detection are not implemented. Before any real deployment, replace the demo with a secure identity provider, protected server-side sessions, and server-enforced role and record-level access checks. Never use real passwords or personal information in this static demo.
