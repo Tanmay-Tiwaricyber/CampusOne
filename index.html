@@ -343,6 +343,11 @@ footer a:hover{color:#fff}
 .marquee-track,.hero-monitor,.starburst{animation:none}
 .cursor-dot,.cursor-ring{display:none!important}
 }
+
+/* Lucide icons: consistent, locally embedded and decorative */
+.ui-icon{width:20px;height:20px;flex:none;vertical-align:middle;display:inline-block}
+.feat-icon,.sec-icon{width:64px;height:64px;padding:17px;display:block;background:#e4eaff;color:#2b4fd3;border-radius:18px;filter:none;transition:transform .3s var(--ease),background .3s}
+.feat-icon:hover,.sec-icon:hover{transform:translateY(-3px);background:#d9e4ff}.design-icon{width:62px;height:62px;padding:15px;border-radius:20px;background:#e6ebff;color:#3157d7}.roadmap-icon{width:82px;height:82px;padding:18px;border-radius:24px;background:#e6ebff;color:#3157d7}.btn .ui-icon,.mobile-menu .ui-icon{width:18px;height:18px}.faq-btn .plus .ui-icon{width:18px;height:18px}
 </style>
 </head>
 <body>
@@ -365,13 +370,15 @@ footer a:hover{color:#fff}
     </nav>
     <div class="nav-right">
       <span class="tag-v">student project</span>
-      <a class="btn magnetic" href="auth.html">Sign in <span class="arr" aria-hidden="true">→</span></a>
+      <a class="btn magnetic" href="auth.html">Sign in <span class="arr" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></span></a>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
     </div>
   </div>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
     <a href="#features">Features</a><a href="#roles">Roles</a><a href="#how">How it works</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a>
-    <a class="btn" href="auth.html">Sign in →</a>
+    <a class="btn" href="auth.html">Sign in <svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></a>
   </nav>
 </header>
 
@@ -386,7 +393,8 @@ footer a:hover{color:#fff}
         <h1 id="hero-h">one campus.<span class="line2"><span class="outline">one</span> <span class="cob">connected</span></span><span class="line2">system.</span></h1>
         <p class="hero-sub">A Design Thinking and Innovation project imagining a more connected college experience.<span class="cursor-blink" aria-hidden="true"></span></p>
         <div class="hero-cta">
-          <a class="btn magnetic" href="#features">Explore the concept <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn magnetic" href="#features">Explore the concept <span class="arr" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></span></a>
           <a class="btn btn-outline magnetic" href="#how">See how it works</a>
         </div>
         <p class="hero-note"><b>College project.</b> A software-only idea, imagined for a more connected campus.</p>
@@ -473,7 +481,8 @@ footer a:hover{color:#fff}
       <article class="os big reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">document-vault.app</span></div>
         <div class="os-body">
-          <img class="feat-icon" src="assets/opt/icon-vault.webp" alt="3D clay folder with checkmark icon." width="800" height="800" loading="lazy">
+          <svg class="ui-icon feat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+  <path d="m9 13 2 2 4-4" /></svg>
           <p class="os-label">Flagship module</p>
           <h3>document vault.</h3>
           <p>Upload, verify, reject, resubmit — with remarks and full history on every file. Students always know where a document stands.</p>
@@ -492,19 +501,28 @@ footer a:hover{color:#fff}
       </article>
       <article class="os reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">approvals</span></div>
-        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-approval.webp" alt="3D clay stamp icon." width="800" height="800" loading="lazy"><p class="os-label">Approval centre</p><h3>approvals, sorted.</h3><p>Certificates, leave and no-dues requests in one queue — with owner and SLA.</p><p style="margin-top:12px"><span class="chip chip-amber">12 pending</span> <span class="chip chip-green">SLA on track</span></p></div>
+        <div class="os-body"><svg class="ui-icon feat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="m9 14 2 2 4-4" /></svg><p class="os-label">Approval centre</p><h3>approvals, sorted.</h3><p>Certificates, leave and no-dues requests in one queue — with owner and SLA.</p><p style="margin-top:12px"><span class="chip chip-amber">12 pending</span> <span class="chip chip-green">SLA on track</span></p></div>
       </article>
       <article class="os reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">alerts</span></div>
-        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-alerts.webp" alt="3D clay bell icon." width="800" height="800" loading="lazy"><p class="os-label">Parent alerts</p><h3>parents, informed.</h3><p>Attendance and fee notifications the moment something changes.</p><p style="margin-top:12px"><span class="chip chip-blue">SMS + app</span></p></div>
+        <div class="os-body"><svg class="ui-icon feat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.268 21a2 2 0 0 0 3.464 0" />
+  <path d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326" /></svg><p class="os-label">Parent alerts</p><h3>parents, informed.</h3><p>Attendance and fee notifications the moment something changes.</p><p style="margin-top:12px"><span class="chip chip-blue">SMS + app</span></p></div>
       </article>
       <article class="os reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">results</span></div>
-        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-results.webp" alt="3D clay report card icon." width="800" height="800" loading="lazy"><p class="os-label">Results &amp; marks</p><h3>marks, validated.</h3><p>Validated and authorized publishing — no silent edits after release.</p><p style="margin-top:12px"><span class="chip chip-green">Authorized</span></p></div>
+        <div class="os-body"><svg class="ui-icon feat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+  <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+  <path d="M8 18v-1" />
+  <path d="M12 18v-6" />
+  <path d="M16 18v-3" /></svg><p class="os-label">Results &amp; marks</p><h3>marks, validated.</h3><p>Validated and authorized publishing — no silent edits after release.</p><p style="margin-top:12px"><span class="chip chip-green">Authorized</span></p></div>
       </article>
       <article class="os reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">fees</span></div>
-        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-fees.webp" alt="3D clay receipt and coin icon." width="800" height="800" loading="lazy"><p class="os-label">Fees &amp; receipts</p><h3>fees, verified.</h3><p>A proposed payment flow with server verification and digital receipts.</p><p style="margin-top:12px"><span class="chip chip-green">Payment verified</span></p></div>
+        <div class="os-body"><svg class="ui-icon feat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M3 11h3.75a2 2 0 0 1 1.6.8l.45.6a4 4 0 0 0 6.4 0l.45-.6a2 2 0 0 1 1.6-.8H21" />
+  <path d="M3 7h18" />
+  <rect x="3" y="3" width="18" height="18" rx="2" /></svg><p class="os-label">Fees &amp; receipts</p><h3>fees, verified.</h3><p>A proposed payment flow with server verification and digital receipts.</p><p style="margin-top:12px"><span class="chip chip-green">Payment verified</span></p></div>
       </article>
     </div>
     <div class="catalogue" aria-labelledby="catalogue-h">
@@ -561,7 +579,6 @@ footer a:hover{color:#fff}
       <h2 id="how-h">from request <em>to resolved.</em></h2>
       <p class="lede">Four steps. One visible thread. No chasing counters.</p>
     </div>
-    <svg class="squiggle" viewBox="0 0 1200 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 Q 75 2, 150 14 T 300 14 T 450 14 T 600 14 T 750 14 T 900 14 T 1050 14 T 1200 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg>
     <div class="grid2" style="align-items:start">
       <div class="steps reveal">
         <div class="step"><div class="num">01</div><h3>submit.</h3><p>Student uploads a document or raises a request in under a minute.</p></div>
@@ -610,12 +627,28 @@ footer a:hover{color:#fff}
       <p class="lede">Security and privacy are core principles of the proposed design. These safeguards would need to be implemented and tested in a real system.</p>
     </div>
     <div class="grid3">
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">access</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-lock.webp" alt="3D clay padlock and shield icon." width="800" height="800" loading="lazy"><p class="os-label">01 / Access</p><h3>role-based access.</h3><p>Students, parents, teachers and admins each see only their own slice.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">storage</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-storage.webp" alt="3D clay vault and key icon." width="800" height="800" loading="lazy"><p class="os-label">02 / Storage</p><h3>private document storage.</h3><p>Use private storage and signed, expiring links rather than public document URLs.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">audit</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-audit.webp" alt="3D clay magnifying glass icon." width="800" height="800" loading="lazy"><p class="os-label">03 / Audit</p><h3>audit logs for every action.</h3><p>Who viewed, approved or changed what — timestamped and searchable.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">server</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-server.webp" alt="3D clay server rack icon." width="800" height="800" loading="lazy"><p class="os-label">04 / Server</p><h3>server-side permission checks.</h3><p>Enforce authorization on the server, not just in the interface.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-backup.webp" alt="3D clay cloud backup icon." width="800" height="800" loading="lazy"><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Plan automated backups and tested restore paths for documents and records.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">privacy</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-privacy.webp" alt="3D clay privacy icon." width="800" height="800" loading="lazy"><p class="os-label">06 / Privacy</p><h3>privacy by design.</h3><p>Minimum data collected, parents get limited verified access, nothing sold.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">access</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+  <path d="m9 12 2 2 4-4" /></svg><p class="os-label">01 / Access</p><h3>role-based access.</h3><p>Students, parents, teachers and admins each see only their own slice.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">storage</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="16" r="1" />
+  <rect x="3" y="10" width="18" height="12" rx="2" />
+  <path d="M7 10V7a5 5 0 0 1 10 0v3" /></svg><p class="os-label">02 / Storage</p><h3>private document storage.</h3><p>Use private storage and signed, expiring links rather than public document URLs.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">audit</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="M12 11h4" />
+  <path d="M12 16h4" />
+  <path d="M8 11h.01" />
+  <path d="M8 16h.01" /></svg><p class="os-label">03 / Audit</p><h3>audit logs for every action.</h3><p>Who viewed, approved or changed what — timestamped and searchable.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">server</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="20" height="8" x="2" y="2" rx="2" ry="2" />
+  <rect width="20" height="8" x="2" y="14" rx="2" ry="2" />
+  <line x1="6" x2="6.01" y1="6" y2="6" />
+  <line x1="6" x2="6.01" y1="18" y2="18" /></svg><p class="os-label">04 / Server</p><h3>server-side permission checks.</h3><p>Enforce authorization on the server, not just in the interface.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 13v8" />
+  <path d="M4 14.899A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.5 8.242" />
+  <path d="m8 17 4-4 4 4" /></svg><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Plan automated backups and tested restore paths for documents and records.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">privacy</span></div><div class="os-body"><svg class="ui-icon sec-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10.733 5.076a10.744 10.744 0 0 1 11.205 6.575 1 1 0 0 1 0 .696 10.747 10.747 0 0 1-1.444 2.49" />
+  <path d="M14.084 14.158a3 3 0 0 1-4.242-4.242" />
+  <path d="M17.479 17.499a10.75 10.75 0 0 1-15.417-5.151 1 1 0 0 1 0-.696 10.75 10.75 0 0 1 4.446-5.143" />
+  <path d="m2 2 20 20" /></svg><p class="os-label">06 / Privacy</p><h3>privacy by design.</h3><p>Minimum data collected, parents get limited verified access, nothing sold.</p></div></article>
     </div>
   </div>
 </section>
@@ -628,7 +661,10 @@ footer a:hover{color:#fff}
       <p class="lede">A proposed path from foundational ideas to a more connected campus. These are future possibilities, not completed releases.</p>
     </div>
     <div class="roadmap reveal" id="roadmapEl">
-      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px"><img class="prop-rocket" src="assets/opt/rocket-soft.webp" alt="" width="800" height="800" loading="lazy"><p class="mono" style="font-size:12px;color:var(--muted)">phase 01 → 08 · proposed direction</p></div>
+      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px"><svg class="ui-icon roadmap-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
+  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09" />
+  <path d="M9 12a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.4 22.4 0 0 1-4 2z" />
+  <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 .05 5 .05" /></svg><p class="mono" style="font-size:12px;color:var(--muted)">phase 01 → 08 · proposed direction</p></div>
       <div class="rm-bar" role="img" aria-label="Illustrative roadmap sequence, from foundation to optional intelligence">
         <div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div>
       </div>
@@ -655,11 +691,22 @@ footer a:hover{color:#fff}
       <p class="lede">Our concept follows a human-centred process: understand the problem, imagine possibilities and refine the idea.</p>
     </div>
     <div class="strip">
-      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph"><img src="assets/opt/design-heart.webp" alt="3D clay heart icon." width="800" height="800" loading="lazy"></div><h3>empathize.</h3><p>Consider the needs of students, parents and campus staff.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(1deg)"><div class="ph"><img src="assets/opt/design-target.webp" alt="3D clay target icon." width="800" height="800" loading="lazy"></div><h3>define.</h3><p>The problem was visibility, not information.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(-1deg)"><div class="ph"><img src="assets/opt/design-bulb.webp" alt="3D clay light bulb icon." width="800" height="800" loading="lazy"></div><h3>ideate.</h3><p>One thread per request, with an owner and a status.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(1.2deg)"><div class="ph" style="background:#DCE8FF"><span class="pixel" style="font-size:10px">04</span></div><h3>prototype.</h3><p>Sketch and prototype possible campus workflows.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(-.8deg)"><div class="ph" style="background:#EFEAFF"><span class="pixel" style="font-size:10px">05</span></div><h3>test.</h3><p>Use feedback to learn, iterate and improve the concept.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph"><svg class="ui-icon design-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M2 9.5a5.5 5.5 0 0 1 9.591-3.676.56.56 0 0 0 .818 0A5.49 5.49 0 0 1 22 9.5c0 2.29-1.5 4-3 5.5l-5.492 5.313a2 2 0 0 1-3 .019L5 15c-1.5-1.5-3-3.2-3-5.5" /></svg></div><h3>empathize.</h3><p>Consider the needs of students, parents and campus staff.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(1deg)"><div class="ph"><svg class="ui-icon design-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" />
+  <circle cx="12" cy="12" r="6" />
+  <circle cx="12" cy="12" r="2" /></svg></div><h3>define.</h3><p>The problem was visibility, not information.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-1deg)"><div class="ph"><svg class="ui-icon design-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1 .2 2.2 1.5 3.5.7.7 1.3 1.5 1.5 2.5" />
+  <path d="M9 18h6" />
+  <path d="M10 22h4" /></svg></div><h3>ideate.</h3><p>One thread per request, with an owner and a status.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(1.2deg)"><div class="ph" style="background:#DCE8FF"><svg class="ui-icon design-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M13 7 8.7 2.7a2.41 2.41 0 0 0-3.4 0L2.7 5.3a2.41 2.41 0 0 0 0 3.4L7 13" />
+  <path d="m8 6 2-2" />
+  <path d="m18 16 2-2" />
+  <path d="m17 11 4.3 4.3c.94.94.94 2.46 0 3.4l-2.6 2.6c-.94.94-2.46.94-3.4 0L11 17" />
+  <path d="M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z" />
+  <path d="m15 5 4 4" /></svg></div><h3>prototype.</h3><p>Sketch and prototype possible campus workflows.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-.8deg)"><div class="ph" style="background:#EFEAFF"><svg class="ui-icon design-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect width="8" height="4" x="8" y="2" rx="1" ry="1" />
+  <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+  <path d="m9 14 2 2 4-4" /></svg></div><h3>test.</h3><p>Use feedback to learn, iterate and improve the concept.</p></article>
     </div>
     <div class="reveal" style="display:flex;justify-content:center;margin-top:36px">
       <article class="sticky sticky-yellow" style="position:static;max-width:540px;text-align:center"><small>Key insight</small>“Information exists. Workflow visibility does not.”</article>
@@ -701,11 +748,16 @@ footer a:hover{color:#fff}
       <p class="lede">Five questions every campus asks us first.</p>
     </div>
     <div class="faq-list reveal">
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq1"><span><span class="qno">Q.01</span>Does it replace the university’s official systems?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq1"><p>No. This project explores a complementary workflow layer. Official systems remain authoritative, and integrations would require institutional approval.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq2"><span><span class="qno">Q.02</span>Does it need special hardware?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq2"><p>The concept is software-only and does not require custom hardware or biometric devices.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq3"><span><span class="qno">Q.03</span>Is AI required?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq3"><p>No. AI is envisioned only as an optional future aid, not a requirement for core workflows.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq4"><span><span class="qno">Q.04</span>Who can see my data?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq4"><p>The proposed design uses scoped roles, verified parent links and audit logs. These are design goals, not a claim of an operational system.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq5"><span><span class="qno">Q.05</span>Can it support multiple campuses?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq5"><p>Multi-campus support is a future design consideration, subject to implementation and institutional requirements.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq1"><span><span class="qno">Q.01</span>Does it replace the university’s official systems?</span><span class="plus" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="M12 5v14" /></svg></span></button><div class="faq-panel" id="faq1"><p>No. This project explores a complementary workflow layer. Official systems remain authoritative, and integrations would require institutional approval.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq2"><span><span class="qno">Q.02</span>Does it need special hardware?</span><span class="plus" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="M12 5v14" /></svg></span></button><div class="faq-panel" id="faq2"><p>The concept is software-only and does not require custom hardware or biometric devices.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq3"><span><span class="qno">Q.03</span>Is AI required?</span><span class="plus" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="M12 5v14" /></svg></span></button><div class="faq-panel" id="faq3"><p>No. AI is envisioned only as an optional future aid, not a requirement for core workflows.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq4"><span><span class="qno">Q.04</span>Who can see my data?</span><span class="plus" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="M12 5v14" /></svg></span></button><div class="faq-panel" id="faq4"><p>The proposed design uses scoped roles, verified parent links and audit logs. These are design goals, not a claim of an operational system.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq5"><span><span class="qno">Q.05</span>Can it support multiple campuses?</span><span class="plus" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="M12 5v14" /></svg></span></button><div class="faq-panel" id="faq5"><p>Multi-campus support is a future design consideration, subject to implementation and institutional requirements.</p></div></div>
     </div>
   </div>
 </section>
@@ -719,7 +771,8 @@ footer a:hover{color:#fff}
         <p class="eyebrow">A student idea, made for campus</p>
         <h2 id="cta-h">better together.<br><em>by design.</em></h2>
         <p>CampusOne is our Design Thinking &amp; Innovation project: a concept for making everyday college life simpler, more transparent and more connected.</p>
-        <div class="project-links"><a class="btn magnetic" href="#design">Explore our process <span class="arr" aria-hidden="true">→</span></a><a class="btn btn-outline" href="#team">Meet the team</a></div>
+        <div class="project-links"><a class="btn magnetic" href="#design">Explore our process <span class="arr" aria-hidden="true"><svg class="ui-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14" />
+  <path d="m12 5 7 7-7 7" /></svg></span></a><a class="btn btn-outline" href="#team">Meet the team</a></div>
       </div>
       <figure class="img-monitor reveal"><img src="assets/opt/smiley-monitor.webp" alt="Friendly 3D clay retro monitor with a smile on screen." width="1000" height="750" loading="lazy"><figcaption class="note-line">a little idea. a more connected campus.</figcaption></figure>
     </div>
