@@ -100,3 +100,11 @@ Tanmay Tiwari · Aditya Verma · Shivansh Dwivedi — B.Tech CSE (AIML), Maharan
 ## Leave request demo
 
 The student dashboard includes a leave form with date validation, local history and deletion. Requests are saved in this browser's `localStorage` and persist after sign-out; they are **not sent to the college** and are visible to anyone using the same browser profile. Use sample information only. A real workflow requires secure server-side authentication, authorization, protected storage, submission and an approval process. Other services labelled planned or not connected are not implemented.
+
+## Icons
+
+Interface icons are inline SVGs from Lucide (ISC license; see `assets/LUCIDE-LICENSE.txt`), so they work without an icon CDN or runtime dependency. Decorative illustrations remain separate from functional UI icons.
+
+## Campus services demos
+
+The student dashboard offers browser-local interactive demonstrations for documents (metadata only), fees (no payments), assignments, grievances, academic history, registration, fictional classmates, library, hostel and transport, events, and feedback. Entries are stored in `localStorage`, persist after sign-out, and are not transmitted or private. Do not enter sensitive data. These are not real college workflows and must be replaced with authenticated, authorized backend services for actual use.
