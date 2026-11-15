@@ -96,3 +96,7 @@ Tanmay Tiwari · Aditya Verma · Shivansh Dwivedi — B.Tech CSE (AIML), Maharan
 ## Student sign-in demo
 
 `auth.html` provides a client-side sample login for the single student account supplied for this project, which opens `student.html` with illustrative data. The browser session flag supports the demo flow and sign-out only: **it is not authentication or authorization**, the sample credentials are visible in page source, and the dashboard must not contain real data. Other roles and automatic role detection are not implemented. Before any real deployment, replace the demo with a secure identity provider, protected server-side sessions, and server-enforced role and record-level access checks. Never use real passwords or personal information in this static demo.
+
+## Leave request demo
+
+The student dashboard includes a leave form with date validation, local history and deletion. Requests are saved in this browser's `localStorage` and persist after sign-out; they are **not sent to the college** and are visible to anyone using the same browser profile. Use sample information only. A real workflow requires secure server-side authentication, authorization, protected storage, submission and an approval process. Other services labelled planned or not connected are not implemented.
