@@ -1,6 +1,6 @@
 # CampusOne — One Campus. One Connected System.
 
-A complete, responsive, single-page marketing website for **CampusOne**, a unified College ERP platform for students, parents, teachers and administrators.
+A responsive single-page presentation for **CampusOne**, a student Design Thinking & Innovation project exploring a unified College ERP concept. The site is illustrative and does not implement the ERP workflows.
 
 Awwwards-level retro-tech editorial style (v2): cream paper with faint grid + grain, oversized Inter Tight type with outlined accents, asymmetric layouts, OS-window cards, taped polaroids, sticky notes, rotating starburst, and a soft-blue retro CRT monitor as the hero object (using `monitor.png` / `monitor-opt.jpg`). Colour theme unchanged: cream `#F7F4EC`, cobalt `#2F5BFF`, periwinkle `#8FA6FF`, sky `#CFE0FF`, lavender `#EFEAFF`, charcoal `#1B1B22`.
 
@@ -55,8 +55,8 @@ vercel --prod
 
 ## Page structure (14 sections)
 
-1. **Navbar** — sticky glass blur, `campusone.` logo, links, `v1 pilot` pixel tag, charcoal pill CTA, mobile hamburger.
-2. **Hero** — giant `campusone` gradient watermark, pixel eyebrow, `one campus. one connected system.` headline, CRT monitor image flanked by sticky notes + `pilot ready` starburst, marquee strip.
+1. **Navbar** — sticky glass blur, `campusone.` logo, links, student-project tag, charcoal pill CTA, mobile hamburger.
+2. **Hero** — giant `campusone` gradient watermark, pixel eyebrow, `one campus. one connected system.` headline, CRT monitor image flanked by sticky notes + project starburst, marquee strip.
 3. **Problem** — `campus life runs on scattered systems.` + 3 sticky-note pains + messy overlapping-windows CRT.
 4. **Solution** — `one platform. four roles.` + 4 polaroid role cards + configurable-roles line.
 5. **Features bento** (pale lavender) — `everything has a status.` Document Vault flagship OS-window with animated status chips + 4 smaller cards.
@@ -67,7 +67,7 @@ vercel --prod
 10. **Design thinking** — `designed with people, not for them.` 5-stage polaroid strip + key-insight sticky note.
 11. **Team** — Tanmay Tiwari, Aditya Verma, Shivansh Dwivedi (B.Tech CSE AIML, MIPS) polaroids with placeholder avatars.
 12. **FAQ** — 5 retro-window accordion rows.
-13. **Final CTA** — `ready?` watermark, smiley CRT (`hello, campus.`), `bring your campus together.` + validated email form + marquee.
+13. **Project closing** — concept summary, smiley CRT, links to the design process and team, and marquee.
 14. **Footer** (charcoal) — logo, tagline, links, `Made at Maharana Institute of Professional Studies`, `© 2026 CampusOne`.
 
 ## Design system
@@ -83,8 +83,7 @@ vercel --prod
 - **Semantic HTML**, reusable component patterns (`Navbar`, `Hero`, `StickyNote`, `Polaroid`, `OSWindowCard`, `BentoCard`, `Marquee`, `Accordion`, `Tabs`) implemented as CSS classes + small JS renderers.
 - **SEO:** meta description, Open Graph + Twitter cards (using `monitor-opt.jpg`), JSON-LD Organization schema, canonical URL.
 - **Performance:** single file, no framework runtime, inline CSS/JS, optimized hero image with `fetchpriority="high"`, system-friendly fonts with `display=swap` — Lighthouse 90+ ready.
-- **Accessibility:** skip link, ARIA tabs/accordion, `aria-live` form feedback, focus-visible rings, reduced-motion support.
-- **Form:** client-side email validation with inline success/error messages (wire the `submit` handler to your API/Formspree endpoint for production).
+- **Accessibility:** skip link, ARIA tabs/accordion, focus-visible rings, reduced-motion support.
 
 ### Next.js mapping
 

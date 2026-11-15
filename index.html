@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CampusOne — One Campus. One Connected System. | College ERP Platform</title>
-<meta name="description" content="CampusOne is a unified College ERP platform. Academics, documents, approvals, fees and campus services in one secure system — with a clear owner and status for every request.">
+<title>CampusOne — A Design Thinking & Innovation Project</title>
+<meta name="description" content="CampusOne is a college Design Thinking and Innovation project exploring a connected campus ERP for students, parents, teachers and administrators.">
 <meta name="keywords" content="CampusOne, College ERP, campus management, student portal, document vault, approval centre">
 <meta name="author" content="CampusOne — Maharana Institute of Professional Studies">
 <meta name="theme-color" content="#F7F4EC">
@@ -12,7 +12,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="CampusOne">
 <meta property="og:title" content="CampusOne — One Campus. One Connected System.">
-<meta property="og:description" content="Academics, documents, approvals, fees and campus services in one secure platform, with a clear owner and status for every request.">
+<meta property="og:description" content="A Design Thinking and Innovation project imagining a more connected college experience.">
 <meta property="og:url" content="https://campusone.vercel.app/">
 <meta property="og:image" content="https://campusone.vercel.app/assets/opt/hero-monitor.jpg">
 <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
 <meta property="og:image:alt" content="CampusOne retro CRT monitor showing Hello, campus.">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="CampusOne — One Campus. One Connected System.">
-<meta name="twitter:description" content="A unified College ERP platform for students, parents, teachers and administrators.">
+<meta name="twitter:description" content="A student project exploring a connected college experience for everyone.">
 <meta name="twitter:image" content="https://campusone.vercel.app/assets/opt/hero-monitor.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232F5BFF'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-size='30' font-weight='900' fill='white' text-anchor='middle'%3Ec%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -258,12 +258,6 @@ h1,h2,h3{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spa
 .cta .watermark{top:-20px;left:50%;transform:translateX(-50%)}
 .cta h2{font-size:clamp(44px,7vw,88px);margin:16px 0 12px;position:relative;z-index:1}
 .cta p{color:var(--muted);max-width:560px;margin:0 auto 28px;position:relative;z-index:1}
-.demo-form{display:flex;gap:10px;max-width:580px;margin:0 auto;position:relative;z-index:1;background:#fff;border:1.5px solid var(--ink);border-radius:999px;padding:6px;box-shadow:var(--sh)}
-.demo-form input{flex:1;border:none;background:transparent;padding:12px 16px;font-size:15px;font-family:inherit;min-width:0}
-.demo-form input:focus{outline:none}
-.demo-form:focus-within{outline:3px solid var(--cobalt);outline-offset:2px}
-.form-msg{margin-top:14px;font-size:14px;min-height:22px;font-weight:600}
-.form-msg.ok{color:#137A3A}.form-msg.err{color:#B02A2A}
 footer{background:var(--ink);color:#EDEDF2;padding:72px 0 36px;position:relative;overflow:hidden}
 footer a{color:#C9C9D4;text-decoration:none;font-size:14px}
 footer a:hover{color:#fff}
@@ -305,6 +299,24 @@ footer a:hover{color:#fff}
 @media(max-width:1024px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.catalogue{margin-top:56px}.catalogue-grid{grid-template-columns:1fr}.catalogue-card{padding:20px}}
 
+
+/* A more expressive project presentation */
+.hero{padding-top:76px;background:radial-gradient(ellipse at 78% 42%,rgba(143,166,255,.35),transparent 43%),linear-gradient(180deg,#f7f4ec,#f2f2f7)}
+.hero-copy{position:relative;z-index:3}
+.hero h1{letter-spacing:-.065em;line-height:.92}
+.hero-stage::before{inset:5%;background:radial-gradient(circle,rgba(143,166,255,.38),transparent 70%)}
+.sec-head h2{letter-spacing:-.055em;line-height:.96}
+.catalogue-card{transition:transform .3s var(--ease),box-shadow .3s var(--ease),background .3s}
+.catalogue-card:hover{transform:translateY(-4px);background:#fff;box-shadow:0 18px 38px rgba(54,68,125,.14)}
+.project-close{background:radial-gradient(ellipse at 75% 50%,#d7e2ff,transparent 55%),#efeaff;text-align:left}
+.project-close-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:48px;position:relative;z-index:1}
+.project-close-copy h2{font-size:clamp(50px,7vw,96px);line-height:.92;letter-spacing:-.06em;margin:22px 0}
+.project-close-copy h2 em{color:var(--cobalt);font-style:italic}
+.project-close-copy p:not(.eyebrow){margin:0 0 28px;max-width:490px}
+.project-links{display:flex;gap:12px;flex-wrap:wrap}
+.project-close .watermark{top:0;left:auto;right:-4%;transform:none;opacity:.65}
+@media(max-width:760px){.hero{padding-top:42px}.project-close-grid{grid-template-columns:1fr;gap:20px}.project-close-copy h2{font-size:clamp(48px,12vw,72px)}}
+
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.in{opacity:1;transform:none}
@@ -321,8 +333,6 @@ footer a:hover{color:#fff}
 .strip{grid-template-columns:1fr 1fr}
 .sticky{position:static;max-width:none;margin:10px auto;transform:rotate(0)!important}
 .starburst{position:static;margin:12px auto 0}
-.demo-form{flex-direction:column;border-radius:20px;padding:10px}
-.demo-form .btn{justify-content:center;width:100%}
 .foot-grid{grid-template-columns:1fr}
 .dash-ui{grid-template-columns:1fr 1fr}
 .hero-meta{gap:14px}
@@ -354,14 +364,14 @@ footer a:hover{color:#fff}
       </ul>
     </nav>
     <div class="nav-right">
-      <span class="tag-v" aria-label="Version 1 pilot">v1 pilot</span>
-      <a class="btn magnetic" href="#demo">Request demo <span class="arr" aria-hidden="true">→</span></a>
+      <span class="tag-v">student project</span>
+      <a class="btn magnetic" href="#design">Our process <span class="arr" aria-hidden="true">→</span></a>
       <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><i></i><i></i><i></i></button>
     </div>
   </div>
   <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile">
     <a href="#features">Features</a><a href="#roles">Roles</a><a href="#how">How it works</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a>
-    <a class="btn" href="#demo">Request demo →</a>
+    <a class="btn" href="#design">Our process →</a>
   </nav>
 </header>
 
@@ -372,24 +382,24 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <div class="hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">College ERP, software-only</p>
+        <p class="eyebrow">A Design Thinking &amp; Innovation project</p>
         <h1 id="hero-h">one campus.<span class="line2"><span class="outline">one</span> <span class="cob">connected</span></span><span class="line2">system.</span></h1>
-        <p class="hero-sub">Academics, documents, approvals, fees and campus services in one secure platform, with a clear owner and status for every request.<span class="cursor-blink" aria-hidden="true"></span></p>
+        <p class="hero-sub">A Design Thinking and Innovation project imagining a more connected college experience.<span class="cursor-blink" aria-hidden="true"></span></p>
         <div class="hero-cta">
-          <a class="btn magnetic" href="#demo">Request demo <span class="arr" aria-hidden="true">→</span></a>
+          <a class="btn magnetic" href="#features">Explore the concept <span class="arr" aria-hidden="true">→</span></a>
           <a class="btn btn-outline magnetic" href="#how">See how it works</a>
         </div>
-        <p class="hero-note"><b>Software-only.</b> No special hardware. Pilot-ready for one campus, designed for many.</p>
+        <p class="hero-note"><b>College project.</b> A software-only idea, imagined for a more connected campus.</p>
         <div class="hero-meta" aria-label="Platform facts">
           <div><b>4 roles</b>student · parent · teacher · admin</div>
-          <div><b>0 queues</b>status on every request</div>
+          <div><b>1 idea</b>less friction, more clarity</div>
           <div><b>1 system</b>one campus, connected</div>
         </div>
       </div>
       <div class="hero-stage">
         <div class="sticky sticky-l"><small>Sticky note</small>No more office queues</div>
         <div class="sticky sticky-r"><small>Sticky note</small>Know your status</div>
-        <div class="starburst" aria-label="Pilot ready">pilot<br>ready</div>
+        <div class="starburst" aria-label="Student project">made<br>to think</div>
         <figure class="hero-monitor" id="heroMonitor">
           <img src="assets/opt/hero-monitor.webp" alt="Soft-blue 3D clay retro CRT monitor showing a student dashboard with attendance ring and fee status." width="1000" height="750" fetchpriority="high">
         </figure>
@@ -494,7 +504,7 @@ footer a:hover{color:#fff}
       </article>
       <article class="os reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">fees</span></div>
-        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-fees.webp" alt="3D clay receipt and coin icon." width="800" height="800" loading="lazy"><p class="os-label">Fees &amp; receipts</p><h3>fees, verified.</h3><p>Server-verified payments with instant, tamper-proof receipts.</p><p style="margin-top:12px"><span class="chip chip-green">Payment verified</span></p></div>
+        <div class="os-body"><img class="feat-icon" src="assets/opt/icon-fees.webp" alt="3D clay receipt and coin icon." width="800" height="800" loading="lazy"><p class="os-label">Fees &amp; receipts</p><h3>fees, verified.</h3><p>A proposed payment flow with server verification and digital receipts.</p><p style="margin-top:12px"><span class="chip chip-green">Payment verified</span></p></div>
       </article>
     </div>
     <div class="catalogue" aria-labelledby="catalogue-h">
@@ -573,7 +583,7 @@ footer a:hover{color:#fff}
     <p class="sec-no reveal">05 — role dashboards</p>
     <div class="sec-head reveal">
       <h2 id="dash-h">built for every <em>seat in the room.</em></h2>
-      <p class="lede">Switch roles to preview what each dashboard looks like. Placeholder screenshots — real data in the pilot.</p>
+      <p class="lede">Explore an illustrative dashboard concept for each campus role. The screen and information shown are examples.</p>
     </div>
     <div class="tabs reveal" role="tablist" aria-label="Role dashboards">
       <button class="tab" role="tab" aria-selected="true" data-role="student" id="tab-student">Student</button>
@@ -596,15 +606,15 @@ footer a:hover{color:#fff}
   <div class="wrap">
     <p class="sec-no reveal">06 — security &amp; trust</p>
     <div class="sec-head reveal">
-      <h2 id="sec-h">built to <em>be trusted.</em></h2>
-      <p class="lede">Student data is not a growth hack. CampusOne is designed so access is earned, logged and reversible.</p>
+      <h2 id="sec-h">designed for <em>trust.</em></h2>
+      <p class="lede">Security and privacy are core principles of the proposed design. These safeguards would need to be implemented and tested in a real system.</p>
     </div>
     <div class="grid3">
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">access</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-lock.webp" alt="3D clay padlock and shield icon." width="800" height="800" loading="lazy"><p class="os-label">01 / Access</p><h3>role-based access.</h3><p>Students, parents, teachers and admins each see only their own slice.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">storage</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-storage.webp" alt="3D clay vault and key icon." width="800" height="800" loading="lazy"><p class="os-label">02 / Storage</p><h3>private document storage.</h3><p>Files live in private storage with signed, expiring links — never public URLs.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">storage</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-storage.webp" alt="3D clay vault and key icon." width="800" height="800" loading="lazy"><p class="os-label">02 / Storage</p><h3>private document storage.</h3><p>Use private storage and signed, expiring links rather than public document URLs.</p></div></article>
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">audit</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-audit.webp" alt="3D clay magnifying glass icon." width="800" height="800" loading="lazy"><p class="os-label">03 / Audit</p><h3>audit logs for every action.</h3><p>Who viewed, approved or changed what — timestamped and searchable.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">server</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-server.webp" alt="3D clay server rack icon." width="800" height="800" loading="lazy"><p class="os-label">04 / Server</p><h3>server-side permission checks.</h3><p>The UI never decides access. The server enforces it on every request.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-backup.webp" alt="3D clay cloud backup icon." width="800" height="800" loading="lazy"><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Automated backups with tested restore paths for documents and records.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">server</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-server.webp" alt="3D clay server rack icon." width="800" height="800" loading="lazy"><p class="os-label">04 / Server</p><h3>server-side permission checks.</h3><p>Enforce authorization on the server, not just in the interface.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-backup.webp" alt="3D clay cloud backup icon." width="800" height="800" loading="lazy"><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Plan automated backups and tested restore paths for documents and records.</p></div></article>
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">privacy</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-privacy.webp" alt="3D clay privacy icon." width="800" height="800" loading="lazy"><p class="os-label">06 / Privacy</p><h3>privacy by design.</h3><p>Minimum data collected, parents get limited verified access, nothing sold.</p></div></article>
     </div>
   </div>
@@ -615,19 +625,19 @@ footer a:hover{color:#fff}
     <p class="sec-no reveal">07 — roadmap</p>
     <div class="sec-head reveal">
       <h2 id="rm-h">built <em>in phases.</em></h2>
-      <p class="lede">A loading bar, not a leap of faith. Each phase ships something usable before the next begins.</p>
+      <p class="lede">A proposed path from foundational ideas to a more connected campus. These are future possibilities, not completed releases.</p>
     </div>
     <div class="roadmap reveal" id="roadmapEl">
-      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px"><img class="prop-rocket" src="assets/opt/rocket-soft.webp" alt="" width="800" height="800" loading="lazy"><p class="mono" style="font-size:12px;color:var(--muted)">phase 01 → 08 · shipping in order</p></div>
-      <div class="rm-bar" role="img" aria-label="Roadmap progress: phases 1 to 3 complete, phase 4 in progress">
-        <div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill=".55"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div>
+      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px"><img class="prop-rocket" src="assets/opt/rocket-soft.webp" alt="" width="800" height="800" loading="lazy"><p class="mono" style="font-size:12px;color:var(--muted)">phase 01 → 08 · proposed direction</p></div>
+      <div class="rm-bar" role="img" aria-label="Illustrative roadmap sequence, from foundation to optional intelligence">
+        <div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div>
       </div>
       <div class="rm-grid">
-        <div class="rm-card done"><p class="ph">phase 01</p><h3>foundation.</h3><p>Auth, roles, audit logs and private storage.</p><span class="st st-done">Done</span></div>
-        <div class="rm-card done"><p class="ph">phase 02</p><h3>core erp.</h3><p>Student records, classes and timetable.</p><span class="st st-done">Done</span></div>
-        <div class="rm-card done"><p class="ph">phase 03</p><h3>academics.</h3><p>Attendance, assignments and marks.</p><span class="st st-done">Done</span></div>
-        <div class="rm-card"><p class="ph">phase 04</p><h3>documents &amp; admin.</h3><p>Document vault and approval centre.</p><span class="st st-next">In progress</span></div>
-        <div class="rm-card"><p class="ph">phase 05</p><h3>finance &amp; comms.</h3><p>Fees, receipts and parent alerts.</p><span class="st st-later">Next</span></div>
+        <div class="rm-card"><p class="ph">phase 01</p><h3>foundation.</h3><p>Auth, roles, audit logs and private storage.</p><span class="st st-later">Proposed</span></div>
+        <div class="rm-card"><p class="ph">phase 02</p><h3>core erp.</h3><p>Student records, classes and timetable.</p><span class="st st-later">Proposed</span></div>
+        <div class="rm-card"><p class="ph">phase 03</p><h3>academics.</h3><p>Attendance, assignments and marks.</p><span class="st st-later">Proposed</span></div>
+        <div class="rm-card"><p class="ph">phase 04</p><h3>documents &amp; admin.</h3><p>Document vault and approval centre.</p><span class="st st-later">Proposed</span></div>
+        <div class="rm-card"><p class="ph">phase 05</p><h3>finance &amp; comms.</h3><p>Fees, receipts and parent alerts.</p><span class="st st-later">Proposed</span></div>
         <div class="rm-card"><p class="ph">phase 06</p><h3>campus services.</h3><p>Library, hostels and events.</p><span class="st st-later">Planned</span></div>
         <div class="rm-card"><p class="ph">phase 07</p><h3>career &amp; ops.</h3><p>Placements, alumni and operations.</p><span class="st st-later">Planned</span></div>
         <div class="rm-card"><p class="ph">phase 08</p><h3>intelligence.</h3><p>Optional AI insights — never required for core workflows.</p><span class="st st-later">Planned</span></div>
@@ -642,14 +652,14 @@ footer a:hover{color:#fff}
     <p class="sec-no reveal">08 — design thinking</p>
     <div class="sec-head reveal">
       <h2 id="des-h">designed with people, <em>not for them.</em></h2>
-      <p class="lede">We started in queues and notice-board crowds — not in a pitch deck.</p>
+      <p class="lede">Our concept follows a human-centred process: understand the problem, imagine possibilities and refine the idea.</p>
     </div>
     <div class="strip">
-      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph"><img src="assets/opt/design-heart.webp" alt="3D clay heart icon." width="800" height="800" loading="lazy"></div><h3>empathize.</h3><p>Shadowed students, parents and office staff for a week.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph"><img src="assets/opt/design-heart.webp" alt="3D clay heart icon." width="800" height="800" loading="lazy"></div><h3>empathize.</h3><p>Consider the needs of students, parents and campus staff.</p></article>
       <article class="polaroid reveal tilt" style="transform:rotate(1deg)"><div class="ph"><img src="assets/opt/design-target.webp" alt="3D clay target icon." width="800" height="800" loading="lazy"></div><h3>define.</h3><p>The problem was visibility, not information.</p></article>
       <article class="polaroid reveal tilt" style="transform:rotate(-1deg)"><div class="ph"><img src="assets/opt/design-bulb.webp" alt="3D clay light bulb icon." width="800" height="800" loading="lazy"></div><h3>ideate.</h3><p>One thread per request, with an owner and a status.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(1.2deg)"><div class="ph" style="background:#DCE8FF"><span class="pixel" style="font-size:10px">04</span></div><h3>prototype.</h3><p>Paper flows first, then a clickable pilot.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(-.8deg)"><div class="ph" style="background:#EFEAFF"><span class="pixel" style="font-size:10px">05</span></div><h3>test.</h3><p>Five users, five tasks, zero training sessions.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(1.2deg)"><div class="ph" style="background:#DCE8FF"><span class="pixel" style="font-size:10px">04</span></div><h3>prototype.</h3><p>Sketch and prototype possible campus workflows.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-.8deg)"><div class="ph" style="background:#EFEAFF"><span class="pixel" style="font-size:10px">05</span></div><h3>test.</h3><p>Use feedback to learn, iterate and improve the concept.</p></article>
     </div>
     <div class="reveal" style="display:flex;justify-content:center;margin-top:36px">
       <article class="sticky sticky-yellow" style="position:static;max-width:540px;text-align:center"><small>Key insight</small>“Information exists. Workflow visibility does not.”</article>
@@ -691,32 +701,28 @@ footer a:hover{color:#fff}
       <p class="lede">Five questions every campus asks us first.</p>
     </div>
     <div class="faq-list reveal">
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq1"><span><span class="qno">Q.01</span>Does it replace the university’s official systems?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq1"><p>No. CampusOne sits alongside official systems and handles the day-to-day workflow layer — documents, approvals, fees and communication — so official records stay authoritative.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq2"><span><span class="qno">Q.02</span>Does it need special hardware?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq2"><p>No, software-only. It runs in the browser on any device students already have — no kiosks, scanners or biometric machines required.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq3"><span><span class="qno">Q.03</span>Is AI required?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq3"><p>No. AI is optional and never needed for core workflows. Approvals, documents and fees work fully without it; intelligence features arrive later as an add-on.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq4"><span><span class="qno">Q.04</span>Who can see my data?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq4"><p>Only authorized roles, with audit logs. Parents get limited verified access to their own child; every view and change is recorded.</p></div></div>
-      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq5"><span><span class="qno">Q.05</span>Can it support multiple campuses?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq5"><p>Yes, designed for it. Roles, departments and workflows are configurable per campus, so one deployment can serve a group of institutions.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq1"><span><span class="qno">Q.01</span>Does it replace the university’s official systems?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq1"><p>No. This project explores a complementary workflow layer. Official systems remain authoritative, and integrations would require institutional approval.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq2"><span><span class="qno">Q.02</span>Does it need special hardware?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq2"><p>The concept is software-only and does not require custom hardware or biometric devices.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq3"><span><span class="qno">Q.03</span>Is AI required?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq3"><p>No. AI is envisioned only as an optional future aid, not a requirement for core workflows.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq4"><span><span class="qno">Q.04</span>Who can see my data?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq4"><p>The proposed design uses scoped roles, verified parent links and audit logs. These are design goals, not a claim of an operational system.</p></div></div>
+      <div class="faq"><button class="faq-btn" aria-expanded="false" aria-controls="faq5"><span><span class="qno">Q.05</span>Can it support multiple campuses?</span><span class="plus" aria-hidden="true">+</span></button><div class="faq-panel" id="faq5"><p>Multi-campus support is a future design consideration, subject to implementation and institutional requirements.</p></div></div>
     </div>
   </div>
 </section>
 
-<!-- ============ FINAL CTA ============ -->
-<section class="sec cta" id="demo" aria-labelledby="cta-h">
-  <div class="watermark" aria-hidden="true" data-parallax="0.08">ready?</div>
+<!-- ============ PROJECT CLOSING ============ -->
+<section class="sec cta project-close" id="project" aria-labelledby="cta-h">
+  <div class="watermark" aria-hidden="true" data-parallax="0.08">what if?</div>
   <div class="wrap">
-    <figure class="img-monitor reveal" style="margin-bottom:30px">
-      <img src="assets/opt/smiley-monitor.webp" alt="3D clay retro monitor with a friendly pixel smiley on screen." width="1000" height="750" loading="lazy">
-      <figcaption class="note-line">hello, campus. · status: pilot ready · owner: assigned</figcaption>
-    </figure>
-    <h2 id="cta-h" class="reveal">bring your campus together.</h2>
-    <p class="reveal">Tell us where to send the pilot walkthrough. One email, no spam, no obligation.</p>
-    <form class="demo-form reveal" id="demoForm" novalidate>
-      <label for="email" class="mono" style="position:absolute;left:-9999px">Work email</label>
-      <input type="email" id="email" name="email" placeholder="you@college.edu" autocomplete="email" required aria-describedby="formMsg">
-      <button type="submit" class="btn magnetic">Request demo <span class="arr" aria-hidden="true">→</span></button>
-    </form>
-    <p class="form-msg" id="formMsg" role="status" aria-live="polite"></p>
-    <p class="hero-note reveal" style="margin-top:8px">We reply within 2 working days. Your email is never shared.</p>
+    <div class="project-close-grid">
+      <div class="project-close-copy reveal">
+        <p class="eyebrow">A student idea, made for campus</p>
+        <h2 id="cta-h">better together.<br><em>by design.</em></h2>
+        <p>CampusOne is our Design Thinking &amp; Innovation project: a concept for making everyday college life simpler, more transparent and more connected.</p>
+        <div class="project-links"><a class="btn magnetic" href="#design">Explore our process <span class="arr" aria-hidden="true">→</span></a><a class="btn btn-outline" href="#team">Meet the team</a></div>
+      </div>
+      <figure class="img-monitor reveal"><img src="assets/opt/smiley-monitor.webp" alt="Friendly 3D clay retro monitor with a smile on screen." width="1000" height="750" loading="lazy"><figcaption class="note-line">a little idea. a more connected campus.</figcaption></figure>
+    </div>
   </div>
   <div class="marquee" aria-hidden="true"><div class="marquee-track" id="marquee2"></div></div>
 </section>
@@ -729,7 +735,7 @@ footer a:hover{color:#fff}
     <div class="foot-grid">
       <div>
         <p class="foot-logo">campusone<span>.</span></p>
-        <p class="foot-tag">One campus. One connected system. A unified College ERP for students, parents, teachers and administrators.</p>
+        <p class="foot-tag">One campus. One connected system. A student concept for Design Thinking &amp; Innovation.</p>
       </div>
       <div>
         <h4>Explore</h4>
@@ -737,7 +743,7 @@ footer a:hover{color:#fff}
       </div>
       <div>
         <h4>College</h4>
-        <ul><li><a href="#team">Team</a></li><li><a href="#design">Design thinking</a></li><li><a href="#demo">Request demo</a></li></ul>
+        <ul><li><a href="#team">Team</a></li><li><a href="#design">Design thinking</a></li><li><a href="#project">About the project</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -822,15 +828,6 @@ document.querySelectorAll('.faq-btn').forEach(function(b){b.setAttribute('aria-e
 if(!open){btn.setAttribute('aria-expanded','true');panel.style.maxHeight=panel.scrollHeight+'px';}
 });
 });
-/* Demo form validation */
-var form=document.getElementById('demoForm'),email=document.getElementById('email'),msg=document.getElementById('formMsg');
-form.addEventListener('submit',function(e){
-e.preventDefault();
-var v=email.value.trim();
-if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v)){msg.textContent='Please enter a valid work email, e.g. you@college.edu';msg.className='form-msg err';email.focus();return;}
-msg.textContent='Thanks — your demo request is in. We will email '+v+' within 2 working days.';msg.className='form-msg ok';form.reset();
-});
-email.addEventListener('input',function(){msg.textContent='';msg.className='form-msg';});
 })();
 </script>
 </body>
