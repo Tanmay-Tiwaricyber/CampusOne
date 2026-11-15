@@ -6,6 +6,15 @@ Awwwards-level retro-tech editorial style (v2): cream paper with faint grid + gr
 
 Interactions: custom cursor, scroll progress, watermark parallax, magnetic buttons, 3D tilt cards, mouse-parallax monitor, animated roadmap fill, staggered reveals — all disabled under `prefers-reduced-motion`.
 
+**3D clay assets (v3):** Generated with the shared style block (soft pastel clay, sky/cobalt/lavender/cream, isolated on cream) and optimized to `assets/opt/*.jpg` (~820 KB total). Coded CSS CRT monitors have been removed — all monitors are now real images:
+- `assets/opt/hero-monitor.jpg` — dashboard monitor (hero + dashboards)
+- `assets/opt/problem-monitor.jpg` — messy-windows monitor
+- `assets/opt/timeline-monitor.jpg` — timeline monitor
+- `assets/opt/smiley-monitor.jpg` — smiley monitor (CTA)
+- `assets/opt/role-{student,parent,teacher,admin}.jpg` — role characters
+- `assets/opt/team-{1,2}.jpg` — team avatars (third avatar + feature/security icons, props, OG banner and logo mark are queued for the next generation batch — image limit 10/turn)
+- `monitor-transparent.webp` (54 KB) — original `monitor.png` with cream background made transparent
+
 ## Files
 
 | File | Purpose |
