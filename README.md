@@ -2,7 +2,9 @@
 
 A complete, responsive, single-page marketing website for **CampusOne**, a unified College ERP platform for students, parents, teachers and administrators.
 
-Retro-tech editorial style: cream paper background, periwinkle-to-sky gradients, cobalt accents, OS-window cards, polaroids, sticky notes, and a soft-blue retro CRT monitor as the hero object (using `monitor.png` / `monitor-opt.jpg`).
+Awwwards-level retro-tech editorial style (v2): cream paper with faint grid + grain, oversized Inter Tight type with outlined accents, asymmetric layouts, OS-window cards, taped polaroids, sticky notes, rotating starburst, and a soft-blue retro CRT monitor as the hero object (using `monitor.png` / `monitor-opt.jpg`). Colour theme unchanged: cream `#F7F4EC`, cobalt `#2F5BFF`, periwinkle `#8FA6FF`, sky `#CFE0FF`, lavender `#EFEAFF`, charcoal `#1B1B22`.
+
+Interactions: custom cursor, scroll progress, watermark parallax, magnetic buttons, 3D tilt cards, mouse-parallax monitor, animated roadmap fill, staggered reveals — all disabled under `prefers-reduced-motion`.
 
 ## Files
 
