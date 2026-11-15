@@ -116,6 +116,8 @@ h1,h2,h3{font-family:'Inter Tight','Inter',sans-serif;font-weight:800;letter-spa
 .polaroid .ph img{width:100%;height:100%;object-fit:cover;border-radius:8px}
 .avatar img{width:100%;height:100%;object-fit:cover;border-radius:50%}
 .feat-icon,.sec-icon{width:64px;height:64px;object-fit:cover;border-radius:16px;border:1.5px solid var(--ink);margin-bottom:14px;background:#fff}
+.prop-sparkles{position:absolute;left:-4%;bottom:-6%;width:150px;border-radius:18px;border:1.5px solid var(--ink);box-shadow:var(--sh);transform:rotate(-6deg);z-index:2}
+.prop-rocket{width:110px;border-radius:18px;border:1.5px solid var(--ink);box-shadow:var(--sh);transform:rotate(6deg)}
 .sticky{position:absolute;background:var(--yellow);padding:16px 18px;border-radius:4px;box-shadow:0 14px 30px -10px rgba(27,27,34,.35);font-weight:600;font-size:15px;line-height:1.35;max-width:200px;text-align:left;z-index:2;transition:transform .35s var(--ease)}
 .sticky::before{content:"";position:absolute;top:-10px;left:50%;transform:translateX(-50%) rotate(-2deg);width:56px;height:18px;background:rgba(255,255,255,.6);border:1px solid rgba(27,27,34,.08);border-radius:2px}
 .sticky-blue{background:#DCE8FF;transform:rotate(-4deg)}
@@ -358,6 +360,7 @@ footer a:hover{color:#fff}
         <div class="sticky sticky-l"><small>Sticky note</small>No more office queues</div>
         <div class="sticky sticky-r"><small>Sticky note</small>Know your status</div>
         <div class="starburst" aria-label="Pilot ready">pilot<br>ready</div>
+        <img class="prop-sparkles" src="assets/opt/sparkles.jpg" alt="3D clay sparkle, sphere, mug and cursor props." width="800" height="800" loading="lazy">
         <figure class="hero-monitor" id="heroMonitor">
           <img src="assets/opt/hero-monitor.jpg" alt="Soft-blue 3D clay retro CRT monitor showing a student dashboard with attendance ring and fee status." width="1000" height="750" fetchpriority="high">
         </figure>
@@ -528,8 +531,8 @@ footer a:hover{color:#fff}
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">storage</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-storage.jpg" alt="3D clay vault and key icon." width="800" height="800" loading="lazy"><p class="os-label">02 / Storage</p><h3>private document storage.</h3><p>Files live in private storage with signed, expiring links — never public URLs.</p></div></article>
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">audit</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-audit.jpg" alt="3D clay magnifying glass icon." width="800" height="800" loading="lazy"><p class="os-label">03 / Audit</p><h3>audit logs for every action.</h3><p>Who viewed, approved or changed what — timestamped and searchable.</p></div></article>
       <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">server</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-server.jpg" alt="3D clay server rack icon." width="800" height="800" loading="lazy"><p class="os-label">04 / Server</p><h3>server-side permission checks.</h3><p>The UI never decides access. The server enforces it on every request.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Automated backups with tested restore paths for documents and records.</p></div></article>
-      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">privacy</span></div><div class="os-body"><p class="os-label">06 / Privacy</p><h3>privacy by design.</h3><p>Minimum data collected, parents get limited verified access, nothing sold.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">backup</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-backup.jpg" alt="3D clay cloud backup icon." width="800" height="800" loading="lazy"><p class="os-label">05 / Recovery</p><h3>backups and recovery.</h3><p>Automated backups with tested restore paths for documents and records.</p></div></article>
+      <article class="os reveal tilt"><div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">privacy</span></div><div class="os-body"><img class="sec-icon" src="assets/opt/icon-privacy.jpg" alt="3D clay privacy icon." width="800" height="800" loading="lazy"><p class="os-label">06 / Privacy</p><h3>privacy by design.</h3><p>Minimum data collected, parents get limited verified access, nothing sold.</p></div></article>
     </div>
   </div>
 </section>
@@ -542,6 +545,7 @@ footer a:hover{color:#fff}
       <p class="lede">A loading bar, not a leap of faith. Each phase ships something usable before the next begins.</p>
     </div>
     <div class="roadmap reveal" id="roadmapEl">
+      <div style="display:flex;align-items:center;gap:18px;margin-bottom:18px"><img class="prop-rocket" src="assets/opt/rocket.jpg" alt="3D clay rocket icon." width="800" height="800" loading="lazy"><p class="mono" style="font-size:12px;color:var(--muted)">phase 01 → 08 · shipping in order</p></div>
       <div class="rm-bar" role="img" aria-label="Roadmap progress: phases 1 to 3 complete, phase 4 in progress">
         <div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill="1"></i></div><div class="rm-seg"><i data-fill=".55"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div><div class="rm-seg"><i data-fill="0"></i></div>
       </div>
@@ -568,9 +572,9 @@ footer a:hover{color:#fff}
       <p class="lede">We started in queues and notice-board crowds — not in a pitch deck.</p>
     </div>
     <div class="strip">
-      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph" style="background:#FFF6DE"><span class="pixel" style="font-size:10px">01</span></div><h3>empathize.</h3><p>Shadowed students, parents and office staff for a week.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(1deg)"><div class="ph" style="background:#FFE9F7"><span class="pixel" style="font-size:10px">02</span></div><h3>define.</h3><p>The problem was visibility, not information.</p></article>
-      <article class="polaroid reveal tilt" style="transform:rotate(-1deg)"><div class="ph" style="background:#E6F7EC"><span class="pixel" style="font-size:10px">03</span></div><h3>ideate.</h3><p>One thread per request, with an owner and a status.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-1.5deg)"><div class="ph"><img src="assets/opt/design-heart.jpg" alt="3D clay heart icon." width="800" height="800" loading="lazy"></div><h3>empathize.</h3><p>Shadowed students, parents and office staff for a week.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(1deg)"><div class="ph"><img src="assets/opt/design-target.jpg" alt="3D clay target icon." width="800" height="800" loading="lazy"></div><h3>define.</h3><p>The problem was visibility, not information.</p></article>
+      <article class="polaroid reveal tilt" style="transform:rotate(-1deg)"><div class="ph"><img src="assets/opt/design-bulb.jpg" alt="3D clay light bulb icon." width="800" height="800" loading="lazy"></div><h3>ideate.</h3><p>One thread per request, with an owner and a status.</p></article>
       <article class="polaroid reveal tilt" style="transform:rotate(1.2deg)"><div class="ph" style="background:#DCE8FF"><span class="pixel" style="font-size:10px">04</span></div><h3>prototype.</h3><p>Paper flows first, then a clickable pilot.</p></article>
       <article class="polaroid reveal tilt" style="transform:rotate(-.8deg)"><div class="ph" style="background:#EFEAFF"><span class="pixel" style="font-size:10px">05</span></div><h3>test.</h3><p>Five users, five tasks, zero training sessions.</p></article>
     </div>
