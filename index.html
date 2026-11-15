@@ -290,6 +290,21 @@ footer a:hover{color:#fff}
 .team-grid .avatar img{filter:drop-shadow(0 12px 18px rgba(54,68,125,.15))}
 .img-monitor figcaption{position:relative}
 @media(max-width:760px){.hero-stage{margin-top:16px}.avatar{width:150px;height:150px}.img-monitor{max-width:100%}#roles .ph img{max-height:240px}}
+
+/* Complete product catalogue */
+.catalogue{margin-top:80px}
+.catalogue-intro{max-width:720px;margin-bottom:32px}
+.catalogue-intro h3{font-size:clamp(32px,4vw,52px);margin:12px 0}
+.catalogue-intro p{color:var(--muted)}
+.catalogue-group{margin-top:36px}
+.catalogue-group h4{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--cobalt-d);margin-bottom:14px}
+.catalogue-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.catalogue-card{background:rgba(255,255,255,.76);border:1px solid rgba(47,91,255,.15);border-radius:20px;padding:22px;box-shadow:0 10px 30px rgba(54,68,125,.06)}
+.catalogue-card h5{font-family:'Inter Tight',sans-serif;font-size:19px;line-height:1.15;letter-spacing:-.02em;margin-bottom:10px}
+.catalogue-card p{font-size:14px;line-height:1.6;color:var(--muted)}
+@media(max-width:1024px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.catalogue{margin-top:56px}.catalogue-grid{grid-template-columns:1fr}.catalogue-card{padding:20px}}
+
 /* REVEAL */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
 .reveal.in{opacity:1;transform:none}
@@ -441,8 +456,9 @@ footer a:hover{color:#fff}
     <p class="sec-no reveal">03 — features</p>
     <div class="sec-head reveal">
       <h2 id="feat-h">everything has <em>a status.</em></h2>
-      <p class="lede">Every document, approval and payment moves through visible states — so nobody has to ask, “what happened to my request?”</p>
+      <p class="lede">Explore the intended CampusOne feature set, from everyday academics to secure, trackable campus workflows. Modules are planned for phased release.</p>
     </div>
+    <p class="os-label" style="margin-bottom:16px">Illustrative workflows · planned product features</p>
     <div class="bento">
       <article class="os big reveal tilt">
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">document-vault.app</span></div>
@@ -480,6 +496,49 @@ footer a:hover{color:#fff}
         <div class="os-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span><span class="os-title">fees</span></div>
         <div class="os-body"><img class="feat-icon" src="assets/opt/icon-fees.webp" alt="3D clay receipt and coin icon." width="800" height="800" loading="lazy"><p class="os-label">Fees &amp; receipts</p><h3>fees, verified.</h3><p>Server-verified payments with instant, tamper-proof receipts.</p><p style="margin-top:12px"><span class="chip chip-green">Payment verified</span></p></div>
       </article>
+    </div>
+    <div class="catalogue" aria-labelledby="catalogue-h">
+    <div class="catalogue-intro"><span class="eyebrow">The complete picture</span><h3 id="catalogue-h">one campus. every workflow.</h3><p>The complete intended product scope from our PRD. Features are planned in phases; availability depends on the release and institutional configuration.</p></div>
+    <div class="catalogue-group"><h4>01 / People &amp; access</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Authentication &amp; accounts</h5><p>Secure sign-in, recovery, optional multi-factor authentication, onboarding, sessions and configurable roles and permissions.</p></article>
+    <article class="catalogue-card"><h5>Student information</h5><p>A student 360 profile with enrollment, academic history, contacts, progression, achievements, records and digital ID.</p></article>
+    <article class="catalogue-card"><h5>Parents &amp; guardians</h5><p>Verified child linking, attendance and performance views, fee information, communication and meeting requests.</p></article>
+    <article class="catalogue-card"><h5>Admissions &amp; enrollment</h5><p>Applications, eligibility, document checks, merit lists, seat allocation, admission decisions and student onboarding.</p></article>
+    </div></div>
+    <div class="catalogue-group"><h4>02 / Academics &amp; learning</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Academic structure</h5><p>Campuses, departments, programmes, subjects, curriculum, credits, sessions, registration and academic calendars.</p></article>
+    <article class="catalogue-card"><h5>Timetable &amp; scheduling</h5><p>Class, teacher, room and exam schedules, substitutions, conflict checks and change notifications.</p></article>
+    <article class="catalogue-card"><h5>Attendance &amp; leave</h5><p>Lecture and subject attendance, shortage alerts, correction history, leave applications and approvals.</p></article>
+    <article class="catalogue-card"><h5>Exams &amp; results</h5><p>Exam scheduling, assessments, marks, configurable grading, approved result publication, transcripts and re-evaluation.</p></article>
+    <article class="catalogue-card"><h5>Assignments &amp; learning</h5><p>Study materials, assignment submissions, teacher feedback, quizzes, question banks and learning progress.</p></article>
+    </div></div>
+    <div class="catalogue-group"><h4>03 / Student services &amp; finance</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Document vault</h5><p>Upload, preview, download, verify and resubmit documents with reviewer remarks, status and history.</p></article>
+    <article class="catalogue-card"><h5>Applications &amp; certificates</h5><p>Track leave, certificates and other requests through configurable approval workflows, remarks and notifications.</p></article>
+    <article class="catalogue-card"><h5>Fees, payments &amp; finance</h5><p>Fee structures, ledgers, payment gateway integration, receipts, scholarships, refunds and reconciliation.</p></article>
+    <article class="catalogue-card"><h5>No-dues &amp; clearance</h5><p>Department-wise clearances, pending dues, approvals, audit history and downloadable no-dues certificates.</p></article>
+    <article class="catalogue-card"><h5>Library &amp; digital library</h5><p>Book catalogue, lending, reservations, renewals, overdue fines, e-books and borrowing history.</p></article>
+    </div></div>
+    <div class="catalogue-group"><h4>04 / Campus life &amp; communication</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Notices &amp; communication</h5><p>Targeted notices, in-app alerts, configured email, SMS and push, messaging, polls and parent-teacher meetings.</p></article>
+    <article class="catalogue-card"><h5>Grievances &amp; welfare</h5><p>Track complaints and confidential cases with owners, escalation, responses and policy-controlled access.</p></article>
+    <article class="catalogue-card"><h5>Events, clubs &amp; sports</h5><p>Event calendars, registration, clubs, competitions, participation certificates and achievements.</p></article>
+    <article class="catalogue-card"><h5>Placement &amp; careers</h5><p>Job and internship listings, eligibility, resumes, applications, interviews, offers and alumni mentorship.</p></article>
+    <article class="catalogue-card"><h5>Hostel management</h5><p>Room and bed allocation, hostel requests, fees, leave passes, complaints, mess feedback and move-out.</p></article>
+    <article class="catalogue-card"><h5>Transport management</h5><p>Routes, stops, registrations, vehicle records, schedules, fees, maintenance and transport complaints.</p></article>
+    </div></div>
+    <div class="catalogue-group"><h4>05 / Institutional operations</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Faculty &amp; human resources</h5><p>Staff profiles, teaching workload, attendance, leave, recruitment, payroll and restricted employee records.</p></article>
+    <article class="catalogue-card"><h5>Research &amp; innovation</h5><p>Student projects, teams, milestones, publications, patents, incubation and research records.</p></article>
+    <article class="catalogue-card"><h5>Facilities &amp; assets</h5><p>Campus spaces, equipment inventory, bookings, maintenance requests, work orders and servicing history.</p></article>
+    <article class="catalogue-card"><h5>Visitors &amp; front desk</h5><p>Visitor registration, appointments, check-in and check-out, passes, enquiries and visitor history.</p></article>
+    <article class="catalogue-card"><h5>Compliance &amp; governance</h5><p>Committees, meeting minutes, policies, accreditation evidence, audits, retention and compliance tasks.</p></article>
+    </div></div>
+    <div class="catalogue-group"><h4>06 / Insights &amp; productivity</h4><div class="catalogue-grid">
+    <article class="catalogue-card"><h5>Dashboards, reports &amp; analytics</h5><p>Role-specific dashboards, operational reports and permission-controlled PDF or spreadsheet exports.</p></article>
+    <article class="catalogue-card"><h5>Calendar &amp; personal utilities</h5><p>Academic and personal calendars, deadlines, to-do lists, reminders, directories, feedback and polls.</p></article>
+    <article class="catalogue-card"><h5>Optional intelligence</h5><p>Early-warning analytics, OCR assistance, search and productivity suggestions; core workflows do not depend on AI.</p></article>
+    </div></div>
     </div>
   </div>
 </section>
