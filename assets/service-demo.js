@@ -45,6 +45,7 @@
     feedback: {initial:'Draft saved locally', next:'Simulated submission', action:'Simulate submission', reverse:'Draft saved locally', reverseAction:'Return to draft'}
   };
   var root=document.getElementById('service-workspace'), content=document.getElementById('service-content'), heading=document.getElementById('service-title'), description=document.getElementById('service-description'), current='', opener=null;
+  if (!root) return;
   function node(tag, className, text) {var el=document.createElement(tag); if(className) el.className=className; if(text!==undefined) el.textContent=text; return el;}
   function read() {var value=localStorage.getItem(key); if(!value) return {}; var data=JSON.parse(value); if(!data||typeof data!=='object'||Array.isArray(data)) throw new Error('Invalid data'); return data;}
   function showError(message) {var m=document.getElementById('service-message');if(m){m.className='service-msg';m.textContent=message;}}

@@ -108,3 +108,17 @@ Interface icons are inline SVGs from Lucide (ISC license; see `assets/LUCIDE-LIC
 ## Campus services demos
 
 The student dashboard offers fictional sample data and a “Use sample data” form shortcut in browser-local interactive demonstrations for documents (metadata only), fees (no payments), assignments, grievances, academic history, registration, fictional classmates, library, hostel and transport, events, and feedback. Entries, simulated status changes, and sample receipt data are stored in `localStorage`, persist after sign-out, and are not transmitted or private. Downloaded receipts are clearly marked as samples, not proof of payment. Do not enter sensitive data. These are not real college workflows and must be replaced with authenticated, authorized backend services for actual use.
+
+## Student dashboard pages
+
+The student workspace now uses separate static pages for overview, profile, leave, academics, timetable/notices, resources, and campus services. Edit `templates/student.html` and the shared files `assets/student-dashboard.css` / `assets/student-dashboard.js`, then run `python3 scripts/build-student-pages.py` to regenerate the seven pages. Campus service interactions remain in `assets/service-demo.js`. Existing `student.html#...` links redirect to their new pages.
+
+These pages still contain publicly readable example data and use a client-side demo gate, not real authentication. No protected student profile or backend is provided.
+
+### Profile photo demo
+
+The profile page can save a cropped thumbnail from a JPG, PNG, or WebP image (up to 5 MB). It is stored in this browser's localStorage, remains after sign-out, and is visible to anyone using the same browser profile. No photo is uploaded or synchronized. Use **Restore default** to remove it. This demo does not secure personal data.
+
+### Student utilities
+
+The Resources page includes a local-only sample checklist with completion and deletion; the Services page can filter its demo cards. Checklist entries remain in browser localStorage after sign-out and are not sent to the college. Use sample text only.
