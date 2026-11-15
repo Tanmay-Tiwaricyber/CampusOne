@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#F7F4EC">
+<title>Student dashboard demo — CampusOne</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Inter+Tight:wght@700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f7f4ec;color:#1b1b22;font-family:Inter,system-ui,sans-serif}a{color:inherit}button{font:inherit}a:focus-visible,button:focus-visible{outline:3px solid #2f5bff;outline-offset:4px}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}.nav{border-bottom:1px solid #dfdace;background:#fffdf9}.nav-inner{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.logo{font:900 26px 'Inter Tight',sans-serif;letter-spacing:-.06em;text-decoration:none}.logo span{color:#2f5bff}.nav-right{display:flex;align-items:center;gap:18px}.badge,.kicker{font:700 10px 'JetBrains Mono',monospace;letter-spacing:.12em;text-transform:uppercase}.badge{background:#efebff;color:#433f86;border-radius:99px;padding:9px 13px}.logout{border:1px solid #1b1b22;border-radius:99px;padding:10px 16px;background:transparent;font-size:13px;font-weight:700;cursor:pointer}.logout:hover{background:#1b1b22;color:#fff}main{padding:55px 0 80px}.banner{border:1px solid #d6e0ff;background:#eef2ff;color:#33446c;padding:15px 18px;border-radius:14px;font-size:13px;line-height:1.6}.banner strong{color:#253b7a}.hero{display:grid;grid-template-columns:1fr 300px;align-items:center;gap:25px;background:linear-gradient(120deg,#e4eaff,#f5f1ff);border-radius:28px;margin:25px 0 30px;padding:40px 42px;overflow:hidden}.kicker{color:#294cc4}.hero h1{font:900 clamp(45px,6vw,70px)/.95 'Inter Tight',sans-serif;letter-spacing:-.055em;margin:15px 0}.hero p{color:#555b6d;line-height:1.6;max-width:450px}.hero img{width:100%;max-height:230px;object-fit:contain;filter:drop-shadow(0 15px 20px #405a8b33)}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:end;margin:36px 0 18px}.section-head h2{font:800 28px 'Inter Tight',sans-serif;letter-spacing:-.04em;margin:0}.section-head span{font-size:12px;color:#62616d}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:#fffdf9;border:1px solid #e3e0d9;border-radius:20px;padding:24px;min-height:170px}.card .label{font:700 10px 'JetBrains Mono',monospace;letter-spacing:.12em;color:#3655bd;text-transform:uppercase}.card strong{display:block;font:800 36px 'Inter Tight',sans-serif;letter-spacing:-.04em;margin:16px 0 7px}.card p{font-size:13px;line-height:1.55;color:#62616d;margin:0}.pill{display:inline-block;background:#edf3ff;color:#3455b8;border-radius:99px;padding:5px 10px;font-size:11px;font-weight:700}.info{margin-top:20px;font-size:13px;color:#62616d;line-height:1.6}.foot{border-top:1px solid #dfdace;color:#686873;padding:25px 0;font-size:12px}@media(max-width:740px){.wrap{width:calc(100% - 32px)}main{padding-top:30px}.hero{grid-template-columns:1fr;padding:28px}.hero img{max-height:180px}.grid{grid-template-columns:1fr}.nav-right{gap:8px}.badge{font-size:9px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap nav-inner"><a class="logo" href="index.html">campusone<span>.</span></a><div class="nav-right"><span class="badge">student demo</span><button class="logout" id="sign-out" type="button">Sign out ↗</button></div></div></header>
+<main class="wrap" id="main">
+  <div class="banner"><strong>Illustrative demo only.</strong> This dashboard uses sample data and is not protected by real authentication. Do not use it for personal or institutional information.</div>
+  <section class="hero" aria-labelledby="welcome"><div><span class="kicker">Your campus, connected</span><h1 id="welcome">hello, student.</h1><p>A small look at how your academic life could come together in one place.</p><span class="pill">Student dashboard concept</span></div><img src="assets/opt/role-student.webp" alt="Illustration of a student" width="1000" height="1000"></section>
+  <section aria-labelledby="overview"><div class="section-head"><h2 id="overview">your overview.</h2><span>Illustrative sample data</span></div><div class="grid">
+    <article class="card"><span class="label">Attendance</span><strong>86%</strong><p>Sample attendance summary across your classes.</p></article>
+    <article class="card"><span class="label">Documents</span><strong>3 / 4</strong><p>Example of verified documents and their status.</p></article>
+    <article class="card"><span class="label">Requests</span><strong>01</strong><p>An example request waiting for an update.</p></article>
+  </div></section>
+  <p class="info">This is a Design Thinking &amp; Innovation project concept. Academic records, documents, and actions are not connected to a live system.</p>
+</main><footer class="foot"><div class="wrap">CampusOne · A student project at MIPS</div></footer>
+<script>
+(function(){
+  // A convenience gate for the sample flow only; it is not security or authorization.
+  try { if(sessionStorage.getItem('campusone_student_demo') !== '1'){ window.location.replace('auth.html'); return; } }
+  catch(e){window.location.replace('auth.html'); return;}
+  document.getElementById('sign-out').addEventListener('click',function(){try{sessionStorage.removeItem('campusone_student_demo');}catch(e){}window.location.assign('auth.html');});
+})();
+</script>
+</body></html>
